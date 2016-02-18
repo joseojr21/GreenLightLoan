@@ -60,8 +60,9 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="../Default.aspx" id="office" runat="server"><i class="fa fa-chevron-circle-left"></i> Home Page</a></li>
 						<li><a href="#" runat="server"><i class="fa fa-chevron-circle-left"></i> Manage Users</a></li>
-						<li><a href="ManagePages.aspx"><i class="fa fa-chevron-circle-left"></i> Manage Pages</a></li>
-						<li><a href="ImageUpload.aspx"><i class="fa fa-chevron-circle-left"></i> Manage Images</a></li>
+						<li><a href="UserRoles.aspx"><i class="fa fa-chevron-circle-left"></i> Manage Roles</a></li>
+						<li><a href="ManagePages.aspx"><i class="fa fa-chevron-circle-left"></i> Manage Page Content</a></li>
+						<li><a href="ImageUpload.aspx"><i class="fa fa-chevron-circle-left"></i> Image Directory</a></li>
 					</ul>
 				</div> <!-- /#navbar-main -->
 			</div> <!-- /.container -->

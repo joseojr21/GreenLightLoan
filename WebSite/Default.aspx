@@ -185,15 +185,18 @@
 						<h3><asp:Literal id="pageTitle" runat="server" />
 						<h4><asp:Literal id="pageTitleSub" runat="server" /></h4></h3>
 						<asp:Label ID="pageContent" runat="server" Text=""></asp:Label>
-						<div class="col-sm-3">
-							<img alt="" id="Image1" class="img-responsive img-rounded" width="200" runat="server" />
-						</div>
-						<div class="col-sm-3">
-							<img alt="" id="Image2" class="img-responsive img-rounded"  width="200" runat="server" />
-						</div>
+						
 						<asp:Button ID="btn_Continue" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Continue" />
 						<asp:Button ID="btn_Yes" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Yes" />
 						<asp:Button ID="btn_No" CssClass="btn btn-primary" OnClick="ButtonPrev_Click" runat="server" Text="No" />
+					
+						<div style="padding-top:15px;">
+							<img alt="" id="Image1" class="img-responsive img-rounded"  runat="server" />
+						</div>
+						<div >
+							<img alt="" id="Image2" class="img-responsive img-rounded"  runat="server" />
+						</div>
+					
 					</ItemTemplate>
 				</asp:Repeater>
 				
@@ -204,16 +207,17 @@
 						<h3><asp:Literal id="pageTitle" runat="server" />
 						<h4><asp:Literal id="pageTitleSub" runat="server" /></h4></h3>
 						<asp:Label ID="pageContent" runat="server" Text=""></asp:Label>
-						<div class="col-sm-3">
-							<img alt="" id="Image1" class="img-responsive img-rounded" width="200" runat="server" />
-						</div>
-						<div class="col-sm-3">
-							<img alt="" id="Image2" class="img-responsive img-rounded"  width="200" runat="server" />
-						</div>
 
 						<asp:Button ID="btn_Continue" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Continue" />
 						<asp:Button ID="btn_Yes" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Yes" />
 						<asp:Button ID="btn_No" CssClass="btn btn-primary" OnClick="ButtonPrev_Click" runat="server" Text="No" />
+
+						<div style="padding-top:15px;">
+							<img alt="" id="Image1" class="img-responsive img-rounded"  runat="server" />
+						</div>
+						<div >
+							<img alt="" id="Image2" class="img-responsive img-rounded"  runat="server" />
+						</div>
 					</ItemTemplate>
 				</asp:Repeater>
 			</asp:View>
@@ -223,16 +227,17 @@
 						<h3><asp:Literal id="pageTitle" runat="server" />
 						<h4><asp:Literal id="pageTitleSub" runat="server" /></h4></h3>
 						<asp:Label ID="pageContent" runat="server" Text=""></asp:Label>
-						<div class="col-sm-3">
-							<img alt="" id="Image1" class="img-responsive img-rounded" width="200" runat="server" />
-						</div>
-						<div class="col-sm-3">
-							<img alt="" id="Image2" class="img-responsive img-rounded"  width="200" runat="server" />
-						</div>
 
 						<asp:Button ID="btn_Continue" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Continue" />
 						<asp:Button ID="btn_Yes" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Yes" />
 						<asp:Button ID="btn_No" CssClass="btn btn-primary" OnClick="ButtonPrev_Click" runat="server" Text="No" />
+
+						<div style="padding-top:15px;">
+							<img alt="" id="Image1" class="img-responsive img-rounded"  runat="server" />
+						</div>
+						<div >
+							<img alt="" id="Image2" class="img-responsive img-rounded"  runat="server" />
+						</div>
 					</ItemTemplate>
 				</asp:Repeater>
 			</asp:View>
@@ -242,16 +247,16 @@
 						<h3><asp:Literal id="pageTitle" runat="server" />
 						<h4><asp:Literal id="pageTitleSub" runat="server" /></h4></h3>
 						<asp:Label ID="pageContent" runat="server" Text=""></asp:Label>
-						<div class="col-sm-3">
-							<img alt="" id="Image1" class="img-responsive img-rounded" width="200" runat="server" />
-						</div>
-						<div class="col-sm-3">
-							<img alt="" id="Image2" class="img-responsive img-rounded"  width="200" runat="server" />
-						</div>
 
 						<asp:Button Id="btn_Continue" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Continue" />
 						<asp:Button Id="btn_Yes" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Yes" />
 						<asp:Button ID="btn_No" CssClass="btn btn-primary" OnClick="ButtonPrev_Click" runat="server" Text="No" />
+						<div style="padding-top:15px;">
+							<img alt="" id="Image1" class="img-responsive img-rounded"  runat="server" />
+						</div>
+						<div >
+							<img alt="" id="Image2" class="img-responsive img-rounded"  runat="server" />
+						</div>
 					</ItemTemplate>
 				</asp:Repeater>
 			</asp:View>
@@ -261,16 +266,16 @@
 						<h3><asp:Literal id="pageTitle" runat="server" />
 						<h4><asp:Literal id="pageTitleSub" runat="server" /></h4></h3>
 						<asp:Label ID="pageContent" runat="server" Text=""></asp:Label>
-						<div class="col-sm-3">
-							<img alt="" id="Image1" class="img-responsive img-rounded" width="200" runat="server" />
-						</div>
-						<div class="col-sm-3">
-							<img alt="" id="Image2" class="img-responsive img-rounded"  width="200" runat="server" />
-						</div>
 
 						<asp:Button ID="btn_Continue" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Continue" />
 						<asp:Button ID="btn_Yes" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Yes" />
 						<asp:Button ID="btn_No" CssClass="btn btn-primary" OnClick="ButtonPrev_Click" runat="server" Text="No" />
+						<div style="padding-top:15px;">
+							<img alt="" id="Image1" class="img-responsive img-rounded"  runat="server" />
+						</div>
+						<div >
+							<img alt="" id="Image2" class="img-responsive img-rounded"  runat="server" />
+						</div>
 					</ItemTemplate>
 				</asp:Repeater>
 			</asp:View>
@@ -280,16 +285,16 @@
 						<h3><asp:Literal id="pageTitle" runat="server" />
 						<h4><asp:Literal id="pageTitleSub" runat="server" /></h4></h3>
 						<asp:Label ID="pageContent" runat="server" Text=""></asp:Label>
-						<div class="col-sm-3">
-							<img alt="" id="Image1" class="img-responsive img-rounded" width="200" runat="server" />
-						</div>
-						<div class="col-sm-3">
-							<img alt="" id="Image2" class="img-responsive img-rounded"  width="200" runat="server" />
-						</div>
 
 						<asp:Button ID="btn_Continue" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Continue" />
 						<asp:Button ID="btn_Yes" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Yes" />
 						<asp:Button ID="btn_No" CssClass="btn btn-primary" OnClick="ButtonPrev_Click" runat="server" Text="No" />
+						<div style="padding-top:15px;">
+							<img alt="" id="Image1" class="img-responsive img-rounded"  runat="server" />
+						</div>
+						<div >
+							<img alt="" id="Image2" class="img-responsive img-rounded"  runat="server" />
+						</div>
 					</ItemTemplate>
 				</asp:Repeater>
 			</asp:View>
@@ -299,16 +304,16 @@
 						<h3><asp:Literal id="pageTitle" runat="server" />
 						<h4><asp:Literal id="pageTitleSub" runat="server" /></h4></h3>
 						<asp:Label ID="pageContent" runat="server" Text=""></asp:Label>
-						<div class="col-sm-3">
-							<img alt="" id="Image1" class="img-responsive img-rounded" width="200" runat="server" />
-						</div>
-						<div class="col-sm-3">
-							<img alt="" id="Image2" class="img-responsive img-rounded"  width="200" runat="server" />
-						</div>
 
 						<asp:Button ID="btn_Continue" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Continue" />
 						<asp:Button ID="btn_Yes" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Yes" />
 						<asp:Button ID="btn_No" CssClass="btn btn-primary" OnClick="ButtonPrev_Click" runat="server" Text="No" />
+						<div style="padding-top:15px;">
+							<img alt="" id="Image1" class="img-responsive img-rounded"  runat="server" />
+						</div>
+						<div >
+							<img alt="" id="Image2" class="img-responsive img-rounded"  runat="server" />
+						</div>
 					</ItemTemplate>
 				</asp:Repeater>
 			</asp:View>
@@ -318,16 +323,16 @@
 						<h3><asp:Literal id="pageTitle" runat="server" />
 						<h4><asp:Literal id="pageTitleSub" runat="server" /></h4></h3>
 						<asp:Label ID="pageContent" runat="server" Text=""></asp:Label>
-						<div class="col-sm-3">
-							<img alt="" id="Image1" class="img-responsive img-rounded" width="200" runat="server" />
-						</div>
-						<div class="col-sm-3">
-							<img alt="" id="Image2" class="img-responsive img-rounded"  width="200" runat="server" />
-						</div>
 
 						<asp:Button ID="btn_Continue" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Continue" />
 						<asp:Button ID="btn_Yes" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Yes" />
 						<asp:Button ID="btn_No" CssClass="btn btn-primary" OnClick="ButtonPrev_Click" runat="server" Text="No" />
+						<div style="padding-top:15px;">
+							<img alt="" id="Image1" class="img-responsive img-rounded"  runat="server" />
+						</div>
+						<div >
+							<img alt="" id="Image2" class="img-responsive img-rounded"  runat="server" />
+						</div>
 					</ItemTemplate>
 				</asp:Repeater>
 			</asp:View>
@@ -337,15 +342,15 @@
 						<h3><asp:Literal id="pageTitle" runat="server" />
 						<h4><asp:Literal id="pageTitleSub" runat="server" /></h4></h3>
 						<asp:Label ID="pageContent" runat="server" Text=""></asp:Label>
-						<div class="col-sm-3">
-							<img alt="" id="Image1" class="img-responsive img-rounded" width="200" runat="server" />
-						</div>
-						<div class="col-sm-3">
-							<img alt="" id="Image2" class="img-responsive img-rounded"  width="200" runat="server" />
-						</div>
 						<asp:Button ID="btn_Continue" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Continue" />
 						<asp:Button ID="btn_Yes" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Yes" />
 						<asp:Button ID="btn_No" CssClass="btn btn-primary" OnClick="ButtonPrev_Click" runat="server" Text="No" />
+						<div style="padding-top:15px;">
+							<img alt="" id="Image1" class="img-responsive img-rounded"  runat="server" />
+						</div>
+						<div >
+							<img alt="" id="Image2" class="img-responsive img-rounded"  runat="server" />
+						</div>
 					</ItemTemplate>
 				</asp:Repeater>
 			</asp:View>
@@ -355,15 +360,15 @@
 						<h3><asp:Literal id="pageTitle" runat="server" />
 						<h4><asp:Literal id="pageTitleSub" runat="server" /></h4></h3>
 						<asp:Label ID="pageContent" runat="server" Text=""></asp:Label>
-						<div class="col-sm-3">
-							<img alt="" id="Image1" class="img-responsive img-rounded" width="200" runat="server" />
-						</div>
-						<div class="col-sm-3">
-							<img alt="" id="Image2" class="img-responsive img-rounded"  width="200" runat="server" />
-						</div>
 						<asp:Button ID="btn_Continue" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Continue" />
 						<asp:Button ID="btn_Yes" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Yes" />
 						<asp:Button ID="btn_No" CssClass="btn btn-primary" OnClick="ButtonPrev_Click" runat="server" Text="No" />
+						<div style="padding-top:15px;">
+							<img alt="" id="Image1" class="img-responsive img-rounded"  runat="server" />
+						</div>
+						<div >
+							<img alt="" id="Image2" class="img-responsive img-rounded"  runat="server" />
+						</div>
 					</ItemTemplate>
 				</asp:Repeater>
 			</asp:View>
@@ -373,15 +378,15 @@
 						<h3><asp:Literal id="pageTitle" runat="server" />
 						<h4><asp:Literal id="pageTitleSub" runat="server" /></h4></h3>
 						<asp:Label ID="pageContent" runat="server" Text=""></asp:Label>
-						<div class="col-sm-3">
-							<img alt="" id="Image1" class="img-responsive img-rounded" width="200" runat="server" />
-						</div>
-						<div class="col-sm-3">
-							<img alt="" id="Image2" class="img-responsive img-rounded"  width="200" runat="server" />
-						</div>
 						<asp:Button ID="btn_Continue" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Continue" />
 						<asp:Button ID="btn_Yes" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Yes" />
 						<asp:Button ID="btn_No" CssClass="btn btn-primary" OnClick="ButtonPrev_Click" runat="server" Text="No" />
+						<div style="padding-top:15px;">
+							<img alt="" id="Image1" class="img-responsive img-rounded"  runat="server" />
+						</div>
+						<div >
+							<img alt="" id="Image2" class="img-responsive img-rounded"  runat="server" />
+						</div>
 					</ItemTemplate>
 				</asp:Repeater>
 			</asp:View>
@@ -391,15 +396,15 @@
 						<h3><asp:Literal id="pageTitle" runat="server" />
 						<h4><asp:Literal id="pageTitleSub" runat="server" /></h4></h3>
 						<asp:Label ID="pageContent" runat="server" Text=""></asp:Label>
-						<div class="col-sm-3">
-							<img alt="" id="Image1" class="img-responsive img-rounded" width="200" runat="server" />
-						</div>
-						<div class="col-sm-3">
-							<img alt="" id="Image2" class="img-responsive img-rounded"  width="200" runat="server" />
-						</div>
 						<asp:Button ID="btn_Continue" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Continue" />
 						<asp:Button ID="btn_Yes" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Yes" />
 						<asp:Button ID="btn_No" CssClass="btn btn-primary" OnClick="ButtonPrev_Click" runat="server" Text="No" />
+						<div style="padding-top:15px;">
+							<img alt="" id="Image1" class="img-responsive img-rounded"  runat="server" />
+						</div>
+						<div >
+							<img alt="" id="Image2" class="img-responsive img-rounded"  runat="server" />
+						</div>
 					</ItemTemplate>
 				</asp:Repeater>
 			</asp:View>
@@ -409,15 +414,15 @@
 						<h3><asp:Literal id="pageTitle" runat="server" />
 						<h4><asp:Literal id="pageTitleSub" runat="server" /></h4></h3>
 						<asp:Label ID="pageContent" runat="server" Text=""></asp:Label>
-						<div class="col-sm-3">
-							<img alt="" id="Image1" class="img-responsive img-rounded" width="200" runat="server" />
-						</div>
-						<div class="col-sm-3">
-							<img alt="" id="Image2" class="img-responsive img-rounded"  width="200" runat="server" />
-						</div>
 						<asp:Button ID="btn_Continue" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Continue" />
 						<asp:Button ID="btn_Yes" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Yes" />
 						<asp:Button ID="btn_No" CssClass="btn btn-primary" OnClick="ButtonPrev_Click" runat="server" Text="No" />
+						<div style="padding-top:15px;">
+							<img alt="" id="Image1" class="img-responsive img-rounded"  runat="server" />
+						</div>
+						<div >
+							<img alt="" id="Image2" class="img-responsive img-rounded"  runat="server" />
+						</div>
 					</ItemTemplate>
 				</asp:Repeater>
 			</asp:View>
@@ -427,15 +432,15 @@
 						<h3><asp:Literal id="pageTitle" runat="server" />
 						<h4><asp:Literal id="pageTitleSub" runat="server" /></h4></h3>
 						<asp:Label ID="pageContent" runat="server" Text=""></asp:Label>
-						<div class="col-sm-3">
-							<img alt="" id="Image1" class="img-responsive img-rounded" width="200" runat="server" />
-						</div>
-						<div class="col-sm-3">
-							<img alt="" id="Image2" class="img-responsive img-rounded"  width="200" runat="server" />
-						</div>
 						<asp:Button ID="btn_Continue" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Continue" />
 						<asp:Button ID="btn_Yes" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Yes" />
 						<asp:Button ID="btn_No" CssClass="btn btn-primary" OnClick="ButtonPrev_Click" runat="server" Text="No" />
+						<div style="padding-top:15px;">
+							<img alt="" id="Image1" class="img-responsive img-rounded"  runat="server" />
+						</div>
+						<div >
+							<img alt="" id="Image2" class="img-responsive img-rounded"  runat="server" />
+						</div>
 					</ItemTemplate>
 				</asp:Repeater>
 			</asp:View>
@@ -445,15 +450,15 @@
 						<h3><asp:Literal id="pageTitle" runat="server" />
 						<h4><asp:Literal id="pageTitleSub" runat="server" /></h4></h3>
 						<asp:Label ID="pageContent" runat="server" Text=""></asp:Label>
-						<div class="col-sm-3">
-							<img alt="" id="Image1" class="img-responsive img-rounded" width="200" runat="server" />
-						</div>
-						<div class="col-sm-3">
-							<img alt="" id="Image2" class="img-responsive img-rounded"  width="200" runat="server" />
-						</div>
 						<asp:Button ID="btn_Continue" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Continue" />
 						<asp:Button ID="btn_Yes" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Yes" />
 						<asp:Button ID="btn_No" CssClass="btn btn-primary" OnClick="ButtonPrev_Click" runat="server" Text="No" />
+						<div style="padding-top:15px;">
+							<img alt="" id="Image1" class="img-responsive img-rounded"  runat="server" />
+						</div>
+						<div >
+							<img alt="" id="Image2" class="img-responsive img-rounded"  runat="server" />
+						</div>
 					</ItemTemplate>
 				</asp:Repeater>
 			</asp:View>
@@ -463,15 +468,15 @@
 						<h3><asp:Literal id="pageTitle" runat="server" />
 						<h4><asp:Literal id="pageTitleSub" runat="server" /></h4></h3>
 						<asp:Label ID="pageContent" runat="server" Text=""></asp:Label>
-						<div class="col-sm-3">
-							<img alt="" id="Image1" class="img-responsive img-rounded" width="200" runat="server" />
-						</div>
-						<div class="col-sm-3">
-							<img alt="" id="Image2" class="img-responsive img-rounded"  width="200" runat="server" />
-						</div>
 						<asp:Button ID="btn_Continue" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Continue" />
 						<asp:Button ID="btn_Yes" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Yes" />
 						<asp:Button ID="btn_No" CssClass="btn btn-primary" OnClick="ButtonPrev_Click" runat="server" Text="No" />
+						<div style="padding-top:15px;">
+							<img alt="" id="Image1" class="img-responsive img-rounded"  runat="server" />
+						</div>
+						<div >
+							<img alt="" id="Image2" class="img-responsive img-rounded"  runat="server" />
+						</div>
 					</ItemTemplate>
 				</asp:Repeater>
 			</asp:View>
@@ -481,15 +486,15 @@
 						<h3><asp:Literal id="pageTitle" runat="server" />
 						<h4><asp:Literal id="pageTitleSub" runat="server" /></h4></h3>
 						<asp:Label ID="pageContent" runat="server" Text=""></asp:Label>
-						<div class="col-sm-3">
-							<img alt="" id="Image1" class="img-responsive img-rounded" width="200" runat="server" />
-						</div>
-						<div class="col-sm-3">
-							<img alt="" id="Image2" class="img-responsive img-rounded"  width="200" runat="server" />
-						</div>
 						<asp:Button ID="btn_Continue" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Continue" />
 						<asp:Button ID="btn_Yes" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Yes" />
 						<asp:Button ID="btn_No" CssClass="btn btn-primary" OnClick="ButtonPrev_Click" runat="server" Text="No" />
+						<div style="padding-top:15px;">
+							<img alt="" id="Image1" class="img-responsive img-rounded"  runat="server" />
+						</div>
+						<div >
+							<img alt="" id="Image2" class="img-responsive img-rounded"  runat="server" />
+						</div>
 					</ItemTemplate>
 				</asp:Repeater>
 			</asp:View>
@@ -499,15 +504,15 @@
 						<h3><asp:Literal id="pageTitle" runat="server" />
 						<h4><asp:Literal id="pageTitleSub" runat="server" /></h4></h3>
 						<asp:Label ID="pageContent" runat="server" Text=""></asp:Label>
-						<div class="col-sm-3">
-							<img alt="" id="Image1" class="img-responsive img-rounded" width="200" runat="server" />
-						</div>
-						<div class="col-sm-3">
-							<img alt="" id="Image2" class="img-responsive img-rounded"  width="200" runat="server" />
-						</div>
 						<asp:Button ID="btn_Continue" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Continue" />
 						<asp:Button ID="btn_Yes" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Yes" />
 						<asp:Button ID="btn_No" CssClass="btn btn-primary" OnClick="ButtonPrev_Click" runat="server" Text="No" />
+						<div style="padding-top:15px;">
+							<img alt="" id="Image1" class="img-responsive img-rounded"  runat="server" />
+						</div>
+						<div >
+							<img alt="" id="Image2" class="img-responsive img-rounded"  runat="server" />
+						</div>
 					</ItemTemplate>
 				</asp:Repeater>
 			</asp:View>
@@ -517,15 +522,15 @@
 						<h3><asp:Literal id="pageTitle" runat="server" />
 						<h4><asp:Literal id="pageTitleSub" runat="server" /></h4></h3>
 						<asp:Label ID="pageContent" runat="server" Text=""></asp:Label>
-						<div class="col-sm-3">
-							<img alt="" id="Image1" class="img-responsive img-rounded" width="200" runat="server" />
-						</div>
-						<div class="col-sm-3">
-							<img alt="" id="Image2" class="img-responsive img-rounded"  width="200" runat="server" />
-						</div>
 						<asp:Button ID="btn_Continue" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Continue" />
 						<asp:Button ID="btn_Yes" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Yes" />
 						<asp:Button ID="btn_No" CssClass="btn btn-primary" OnClick="ButtonPrev_Click" runat="server" Text="No" />
+						<div style="padding-top:15px;">
+							<img alt="" id="Image1" class="img-responsive img-rounded"  runat="server" />
+						</div>
+						<div >
+							<img alt="" id="Image2" class="img-responsive img-rounded"  runat="server" />
+						</div>
 					</ItemTemplate>
 				</asp:Repeater>
 			</asp:View>
@@ -535,15 +540,15 @@
 						<h3><asp:Literal id="pageTitle" runat="server" />
 						<h4><asp:Literal id="pageTitleSub" runat="server" /></h4></h3>
 						<asp:Label ID="pageContent" runat="server" Text=""></asp:Label>
-						<div class="col-sm-3">
-							<img alt="" id="Image1" class="img-responsive img-rounded" width="200" runat="server" />
-						</div>
-						<div class="col-sm-3">
-							<img alt="" id="Image2" class="img-responsive img-rounded"  width="200" runat="server" />
-						</div>
 						<asp:Button ID="btn_Continue" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Continue" />
 						<asp:Button ID="btn_Yes" CssClass="btn btn-primary" OnClick="ButtonNext_Click" runat="server" Text="Yes" />
 						<asp:Button ID="btn_No" CssClass="btn btn-primary" OnClick="ButtonPrev_Click" runat="server" Text="No" />
+						<div style="padding-top:15px;">
+							<img alt="" id="Image1" class="img-responsive img-rounded"  runat="server" />
+						</div>
+						<div >
+							<img alt="" id="Image2" class="img-responsive img-rounded"  runat="server" />
+						</div>
 					</ItemTemplate>
 				</asp:Repeater>
 			</asp:View>

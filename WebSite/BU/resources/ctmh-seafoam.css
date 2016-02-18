@@ -28,7 +28,10 @@ body {
   background: #fafaf1 url('//cdn.closetomyheart.com/global/events/dashboard/bg.png') left top repeat;
 	background-attachment: fixed;
 }
-
+img {
+	width: 100%;
+	height: auto;
+}
 /* custom wrapper */
 #wrapper {
 	position: relative;

@@ -1,0 +1,697 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DAL.Business</name>
+    </assembly>
+    <members>
+        <member name="P:DAL.Business.Account.AboutMe">
+            <summary>
+            The content for the OBA About Me page. Data is not sanitized and should be cleaned before outputting to a web page
+            **This Property may not be loaded by all Account Load Methods
+            </summary>
+        </member>
+        <member name="P:DAL.Business.Account.HeadshotPath">
+            <summary>
+            The filename of the image for the OBA About Me page.
+            **This Property may not be loaded by all Account Load Methods
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Account.IsUniqueEmailAddress(System.String,System.Int32)">
+            <summary>
+            Checks for any accounts other than the specified account id with the same email address. Only checks active accounts.
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Account.IsUniqueUserNameEmail(System.String,System.Nullable{System.Int32})">
+            <summary>
+            Returns true if username/email valid
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Account.IsValidPassword(System.String)">
+            <summary>
+            Reads the config setting "ValidPasswordRegex" to get a regular expression to validate the Password against
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Account.ConsultantByCustomerAccountID(System.Int32)">
+            <summary>
+            Returns the consultant that the customer is affiliated to. For consultant account IDs it returns the consultant and for Employees it returns the corporate account.
+            </summary>
+        </member>
+        <member name="T:DAL.Business.Catalog.Catalog">
+            <summary>
+            Used for OBA product organization. It was easier for Report writing if the OBA catalogs were separated from general groups.
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Catalog.Catalog.GetCatalog(System.Int32)">
+            <summary>
+            Returns a single Item
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Catalog.Catalog.Delete(System.Int32)">
+            <summary>
+            Deletes the catalog, detaches any child catalogs, deletes any catalog items
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Catalog.GroupTree.GetGroupTrees">
+            <summary>
+            Returns a single Item
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Catalog.GroupTree.BuildTree(System.Collections.Generic.List{DAL.Business.Catalog.GroupTree},DAL.Business.Catalog.GroupTree)">
+            <summary>
+            Returns a list of root groups with the Children collections populated from the flatList collection
+            </summary>
+            <param name="flatList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Business.Catalog.CatalogTree.GetCatalogTrees">
+            <summary>
+            Returns a single Item
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Catalog.CatalogTree.BuildTree(System.Collections.Generic.List{DAL.Business.Catalog.CatalogTree},DAL.Business.Catalog.CatalogTree)">
+            <summary>
+            Returns a list of root catalogs with the Children collections populated from the flatList collection
+            </summary>
+            <param name="flatList"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DAL.Business.Catalog.GroupItem">
+            <summary>
+            Generic grouping of items to a group. For any use. The OBA uses CatalogItem for its Shopping Tree.
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Catalog.GroupItem.IsValidDate(System.DateTime)">
+            <summary>
+            Indicates if the test date is within the items begin and end dates (exclusive end date)
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Catalog.GroupItem.GetGroupItem(System.Int32)">
+            <summary>
+            Returns a single Item
+            </summary>
+        </member>
+        <member name="T:DAL.Business.Catalog.Group">
+            <summary>
+            Generic group for grouping products. For any use. The OBA uses Catalog object instead.
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Catalog.Group.GetGroup(System.Int32)">
+            <summary>
+            Returns a single Item
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Catalog.Group.Delete(System.Int32)">
+            <summary>
+            Deletes the group, detaches any child groups, deletes any group items
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Catalog.Group.IsLockedGroup(System.Int32)">
+            <summary>
+            Checks if the group or a child is locked
+            </summary>
+            <param name="groupID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DAL.Business.Catalog.CatalogItem">
+            <summary>
+            Used for the OBA catalog and item organization
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Catalog.CatalogItem.GetCatalogItem(System.Int32)">
+            <summary>
+            Returns a single Item
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Events.FieldDateGroup.GetGroups(System.Collections.Generic.List{DAL.Business.Events.FieldDate},System.DateTime,System.DateTime)">
+            <summary>
+            Look at the field override dates and build a list of the begin date groups.  Assumes the title group dates are contiguous (make ranges between titles).
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Events.RegistrationReport.GetReportByEvent(System.Int32)">
+            <summary>
+            Returns all registrations for an event (includes cancelled, pending, etc)
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Events.Registration.GetByEvent(System.Int32)">
+            <summary>
+            Returns all registrations for an event (includes cancelled, pending, etc)
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Events.Registration.GetByAccount(System.Int32,System.Int32)">
+            <summary>
+            Return a Complete or pending registration for the account and event (exclude Cancelled or Transferred)
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Events.Event.GetEvent(System.Boolean)">
+            <summary>
+            Return a list of all events
+            </summary>
+        </member>
+        <member name="P:DAL.Business.Events.Field.RemainingQuantity">
+            <summary>
+            Queries the database to get the remaining quantity. Caches the result for the life of the HttpContext.
+            If there is no StartQuantity we don't bother querying and just return int.MaxValue
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Events.Field.MapValuesToFields(System.Collections.Generic.Dictionary{System.Int32,DAL.Business.Events.Field},System.Collections.Generic.Dictionary{System.Int32,DAL.Business.Events.FieldValue})">
+            <summary>
+            
+            </summary>
+            <param name="fields"></param>
+            <param name="fieldValues"></param>
+        </member>
+        <member name="M:DAL.Business.Events.FieldValue.GetFieldValues(System.Int32)">
+            <summary>
+            Get the values for the fields for the Registration. Returns a dictionary where the FieldID is the key.
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Events.FieldValue.GetReportFieldValues(System.Int32)">
+            <summary>
+            Gets all the registration field values for an event and returns it in an easy to consume dictionary. RegistrationID is the dictionary key. Use this to avoid
+            executing hundreds of queries to retrieve fields for individual registrations when running reports.
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Events.Form.GetGroupedFields(DAL.Business.Events.Field,System.Collections.Generic.List{DAL.Business.Events.Field})">
+            <summary>
+            Gets a list of fields grouped with the reference field (including the reference field).
+            Removes all the grouped fields (except the reference field) from the original list
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Events.FormReader.ReadForm(System.Collections.Generic.Dictionary{System.Int32,DAL.Business.Events.Field})">
+            <summary>
+            Reads values from the HttpContext Request Form based on the Fields passed in.
+            Returns a Dictionary of FieldValues constructed from the Form. Key is the FieldID.
+            If the Field objects have a FieldValue already assigned the existing object is updated.
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Inventory.Audit.Save(DAL.Business.Inventory.Audit)">
+            <summary>
+            Save the Audit only if it has an ModifiedValues entries.
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Inventory.Forecast.GenerateWeeklyForecast">
+            <summary>
+            Connect to the GP DB and execute the GenerateWeeklyForecast stored proc
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Inventory.ItemCountry.IsOnAndHasQuantity(System.DateTime,System.Int32,System.Boolean)">
+            <summary>
+            Checks the items Active flag, Date range and quantity on hand (no backorder)
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Inventory.ItemCountry.GetItemsForGroup(System.Int32,DAL.Utilities.Data.Geography.Country)">
+            <summary>
+            Get all items for a group. Does not check active flag or quantity. Note, this does not include GroupItem properties, such as group begin and end dates
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Inventory.Customs.GetCustoms(System.Int32)">
+            <summary>
+            Returns a single Item
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Inventory.Relation.GetRelation(System.Int32)">
+            <summary>
+            Returns a single Item
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Inventory.Relation.GetByChild(System.Int32,DAL.Business.Inventory.RelationshipType)">
+            <summary>
+            Returns all the relationships this child is part of. Essentially giving a list of master items.
+            </summary>
+            <param name="childItemID"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Business.Inventory.Relation.GetByChildOrParent(System.Int32,DAL.Business.Inventory.RelationshipType)">
+            <summary>
+            If the item is the master in a relation then all its children are returned. If it is not a master and is child it returns the master's children. If there is more than one
+            master then it uses the master with the least itemid.
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Inventory.Tags.GetTags(System.Int32)">
+            <summary>
+            Returns a single Item
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Inventory.Price.GetPrice(System.Int32)">
+            <summary>
+            Returns a single Item
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Inventory.CountryDates.GetCountryDate(System.Int32)">
+            <summary>
+            Returns a single Item
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Inventory.Color.GetColor(System.Int32)">
+            <summary>
+            Returns a single Item
+            </summary>
+        </member>
+        <member name="P:DAL.Business.Inventory.Item.QuantityOnHandAfterBuffer">
+            <summary>
+            Returns the quantity available based on the database calculation (= quantity on hand - buffer).
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Inventory.Item.HasQuantityOnHand(System.Int32,System.Boolean)">
+            <summary>
+            Tests whether the QuantityOnHand less QuantityBuffer. Also check whether the item has unlimited quantity
+            </summary>
+        </member>
+        <member name="P:DAL.Business.Inventory.Item.QuantitySelected">
+            <summary>
+            This value is not from the database but is a convenient container
+            for use when taking an order
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Inventory.Item.GetItem(System.Int32)">
+            <summary>
+            Gets an Item from Item Maintenance without restricting it to a certain catalog date.
+            The item will be returned even if it has expired
+            </summary>
+            <param name="itemID"></param>
+            <param name="countryID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Business.Inventory.Item.AdjustQuantityOnHand(System.Int32,System.Int32)">
+            <summary>
+            Adjust the item's Quantity On Hand and return the new quantity on hand value.
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Inventory.Item.LoadMarketingText">
+            <summary>
+            If the Marketing Text has not already been loaded it is loaded. This will overwrite any value already in the field.
+            </summary>
+        </member>
+        <member name="T:DAL.Business.MailChimp.MemberData">
+            <summary>
+            Represents a view of data from the CTMH database that is interesting in the context of MailChimp. This data can be passed to a Member object to create a record in the MailChimp system.
+            Allows operations on the CTMH MailChimp member information but does not operate on the Account, Event or other CTMH data.
+            </summary>
+        </member>
+        <member name="T:DAL.Business.MailChimp.NewsletterData">
+            <summary>
+            Represents a view of data from the CTMH database that is interesting in the context of MailChimp. This data can be passed to a Member object to create a record in the MailChimp system.
+            Allows operations on the CTMH MailChimp member information but does not operate on the Account, Event or other CTMH data.
+            </summary>
+        </member>
+        <member name="M:DAL.Business.MailChimp.NewsletterData.GetAccountDataByMailChimpID(System.Int32)">
+            <summary>
+            Usually there should be only one record for a given MailChimpID but there are some circumstances
+            where this may not be the case and multiples can be returned.
+            </summary>
+            <param name="leid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DAL.Business.MailChimp.NewsletterService">
+            <summary>
+            MailChimp interface wrapper for API v2.0
+            </summary>
+        </member>
+        <member name="T:DAL.Business.MailChimp.NewsletterMember">
+            <summary>
+            Represents a Member record from MailChimp. Does not exist in the CTMH databases. Can be populated from CTMH data by passing an AccountData object to the constructor
+            </summary>
+        </member>
+        <member name="T:DAL.Business.MailChimp.ConsultantService">
+            <summary>
+            MailChimp interface wrapper for API v2.0
+            </summary>
+        </member>
+        <member name="T:DAL.Business.MailChimp.ConsultantMember">
+            <summary>
+            Represents a Member record from MailChimp. Does not exist in the CTMH databases. Can be populated from CTMH data by passing an AccountData object to the constructor
+            </summary>
+        </member>
+        <member name="T:DAL.Business.MailChimp.ConsultantData">
+            <summary>
+            Represents a view of data from the CTMH database that is interesting in the context of MailChimp. This data can be passed to a Member object to create a record in the MailChimp system.
+            Allows operations on the CTMH MailChimp member information but does not operate on the Account, Event or other CTMH data.
+            </summary>
+        </member>
+        <member name="M:DAL.Business.MailChimp.ConsultantData.GetAccountDataByMailChimpID(System.Int32)">
+            <summary>
+            Usually there should be only one record for a given MailChimpID but there are some circumstances
+            where this may not be the case and multiples can be returned.
+            </summary>
+            <param name="leid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DAL.Business.MailChimp.Member">
+            <summary>
+            Represents a Member record from MailChimp. Does not exist in the CTMH databases. Can be populated from CTMH data by passing an AccountData object to the constructor
+            </summary>
+        </member>
+        <member name="P:DAL.Business.MailChimp.Member.Leid">
+            <summary>
+            Int unique id used for links to the website
+            </summary>
+        </member>
+        <member name="T:DAL.Business.MailChimp.Service20`1">
+            <summary>
+            MailChimp interface wrapper for API v2.0
+            </summary>
+        </member>
+        <member name="M:DAL.Business.MailChimp.Service20`1.Subscribe(`0,System.Boolean)">
+            <summary>
+            Subscribes the member to the list. Double Opt in and Welcome emails are sent (or resent) as directed.
+            If the member has an Leid the existing member is updated.
+            If the email is not subscribed to the list is is added.
+            If the email is already on the list it is updated.
+            </summary>
+            <returns>Returns the original member object with the Email, Euid, and Leid values populated.</returns>
+        </member>
+        <member name="M:DAL.Business.MailChimp.Service20`1.Unsubscribe(System.Int32)">
+            <summary>
+            Unsubscribes the member from the list. The member is deleted and no notifications are sent.
+            Throws an exception if the unsubscribe fails.
+            </summary>
+        </member>
+        <member name="M:DAL.Business.MailChimp.Service20`1.BatchSubscribeAndUpdate(System.Collections.Generic.List{`0},System.Boolean)">
+            <summary>
+            Subscribe or update everyone in the list. Send the Double Opt In email as directed. It sends the Double Opt In to anyone that has not yet opted in. This means members that
+            have already been added (and sent the double opt in email) will show as an 'add' again and will receive the double opt in again.
+            Each member object is updated with the Status and Message fields to indicate Add, Update, or Error.
+            </summary>
+            <returns>Returns true if no errors occurred. Check the members passed in for the status of each member.</returns>
+        </member>
+        <member name="M:DAL.Business.MailChimp.Service20`1.BatchUnsubscribe(System.Collections.Generic.List{`0})">
+            <summary>
+            Unsubscribe everyone in the list. They are deleted from the list and no notifications are sent.
+            If there are errors then full the JSON response is returned. Otherwise an empty string is returned.
+            </summary>
+            <param name="members"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Business.OrderType.GetOrderType(System.Int32)">
+            <summary>
+            Returns a single Item
+            </summary>
+        </member>
+        <member name="M:DAL.Business.ContactInformation.CreateContactInformation(System.Int32,DAL.Utilities.Data.Consultant.ContactInformationType,System.String)">
+            <summary>
+            Sets up a ContactInformation object. Does not save the data to the database.
+            </summary>
+        </member>
+        <member name="M:DAL.Business.GeoLocation.GeoCode.GetCoordinateFromAddress(System.String,DAL.Utilities.Data.Geography.Country,DAL.Business.GeoLocation.GeoCode.GeoCodeProviderTypes,System.String)">
+            <summary>
+            Gets a coordinate from an address. Country parameter encourages the result to be in the country specified (but does not guarentee it).
+            </summary>
+        </member>
+        <member name="M:DAL.Business.GeoLocation.GeoCode.GetCoordinateFromAddress(System.String,System.String,System.String,System.String,DAL.Utilities.Data.Geography.Country,DAL.Business.GeoLocation.GeoCode.GeoCodeProviderTypes,System.String)">
+            <summary>
+            Gets a coordinate from an address. Country parameter encourages the result to be in the country specified (but does not guarentee it).
+            </summary>
+        </member>
+        <member name="M:DAL.Business.ShippingMethod.GetShippingMethods(DAL.Business.Address,System.Int32,System.Int32)">
+            <summary>
+            Returns a list of Shipping Methods given the parameters. Retrieves the data from the DB
+            </summary>
+        </member>
+        <member name="M:DAL.Business.ShippingMethod.GetShippingMethod(System.Int32,DAL.Business.Address,System.Int32,System.Int32)">
+            <summary>
+            Returns a list of Shipping Methods given the parameters. Retrieves the data from the DB
+            </summary>
+        </member>
+        <member name="T:DAL.Business.CTMHTax">
+            <summary>
+            Tax Rates provided by the CTMH provider
+            </summary>
+        </member>
+        <member name="P:DAL.Business.CTMHTax.IsExpired">
+            <summary>
+            If the expiration date is NullDateTime the record is considered to never expire except when the TaxCacheID is &lt;= 0 (which means the record is incompleted)
+            If the expiration is not NullDateTime then the
+            </summary>
+        </member>
+        <member name="P:DAL.Business.TaxCache.IsExpired">
+            <summary>
+            If the expiration date is NullDateTime the record is considered to never expire except when the TaxCacheID is &lt;= 0 (which means the record is incompleted)
+            If the expiration is not NullDateTime then the
+            </summary>
+        </member>
+        <member name="M:DAL.Business.ReplicatedSite.CheckSiteNameAvailability(System.String)">
+            <summary>
+            Returns a list of account ids that are already using this site name
+            </summary>
+        </member>
+        <member name="P:DAL.Business.BillingProfile.PayerID">
+            <summary>
+            The KEY used to find the profile in an external storage system
+            </summary>
+        </member>
+        <member name="P:DAL.Business.BillingProfile.SecurityCode">
+            <summary>
+            This property is available for data holding purposes only. The SecurityCode is neither stored nor loaded from the database
+            </summary>
+        </member>
+        <member name="P:DAL.Business.BillingProfile.CardNumber">
+            <summary>
+            The card number is loaded from the third party storage if available
+            </summary>
+        </member>
+        <member name="P:DAL.Business.BillingProfile.CardNumberLastFour">
+            <summary>
+            The last four digits of the card number is automatically updated when the Card Number is changed.  This value
+            is also loaded from the database even when the card number is not loaded yet. Clearing the card number does not
+            clear this property. This prevents losing the Last Four when updating a profile while leaving the card number blank.
+            </summary>
+        </member>
+        <member name="P:DAL.Business.BillingProfile.CardType">
+            <summary>
+            Card Type is only available if the CardNumber property is set.
+            </summary>
+        </member>
+        <member name="M:DAL.Business.BillingProfile.IsValidProfile(System.DateTime)">
+            <summary>
+            Checks the Billing Information.
+            Validates the credit card only if this is not a persisted profile.
+            Validates the name on card and expiration date.
+            If an address object is present the presence of a postal code is required.
+            Validates the security code if it is present or if this is not a persisted profile.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Business.BillingProfile.Save">
+            <summary>
+            Saves the Profile information to the database. <b>Does not</b> save to the third party storage provider.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Business.BillingProfile.Delete">
+            <summary>
+            Deletes the Profile from the database. <b>Does not</b> delete from the third party storage provider
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DAL.Business.ProfileApplicationType">
+            <summary>
+            Represents an Application that will bill a credit card.  The card information
+            will be stored in a Profile.
+            </summary>
+        </member>
+        <member name="M:DAL.Business.ProfileApplicationType.GetEnumByID(System.Int32)">
+            <summary>
+            Returns an object defined as part of the static "enum". Does not query the database.
+            </summary>
+            <param name="profileApplicationTypeID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DAL.Business.Logger.Logger">
+            <summary>
+            Writes a log entry to the database
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Logger.Logger.WriteWarning(System.String,System.String,System.String)">
+            <summary>
+            Write a warning message to the log database
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Logger.Logger.WriteWarning(System.String,DAL.Business.Logger.LogObject,System.String,System.String)">
+            <summary>
+            Write a warning message to the log database
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Logger.Logger.WriteWarning(System.String,System.String,System.String,System.String)">
+            <summary>
+            Write a warning message to the log database
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Logger.Logger.WriteError(System.String,System.String,System.String)">
+            <summary>
+            Write a error message to the log database
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Logger.Logger.WriteError(System.String,DAL.Business.Logger.LogObject,System.String,System.String)">
+            <summary>
+            Write a error message to the log database
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Logger.Logger.WriteError(System.String,System.String,System.String,System.String)">
+            <summary>
+            Write a error message to the log database
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Logger.Logger.WriteInfo(System.String,System.String,System.String)">
+            <summary>
+            Write a information message to the log database
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Logger.Logger.WriteInfo(System.String,DAL.Business.Logger.LogObject,System.String,System.String)">
+            <summary>
+            Write a information message to the log database
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Logger.Logger.WriteInfo(System.String,System.String,System.String,System.String)">
+            <summary>
+            Write a information message to the log database
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Logger.Logger.WriteLog(DAL.Business.Logger.Logger.LogType,System.String,DAL.Business.Logger.LogObject,System.String,System.String)">
+            <summary>
+            Write a message to the log database
+            </summary>
+            <param name="logObject">Any LogObject or descendant of LogObject. Is converted to XML and stored in the database.</param>
+        </member>
+        <member name="M:DAL.Business.Logger.Logger.WriteLog(DAL.Business.Logger.Logger.LogType,System.String,System.String,System.String,System.String)">
+            <summary>
+            Write a message to the log database
+            </summary>
+            <remarks>This is where real work happens</remarks>
+        </member>
+        <member name="M:DAL.Business.Logger.Logger.#ctor(System.String,System.String)">
+            <summary>
+            Instantiate a logger object which remembers that page and application. The instance uses the Static methods
+            to actually write the log entry.
+            </summary>
+            <param name="page"></param>
+            <param name="application"></param>
+        </member>
+        <member name="T:DAL.Business.Logger.LogObject">
+            <summary>
+            LogObject holds the data that will be stored in the XML Detail field of the log entry.
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Logger.LogObject.NameValueCollectionToXML(System.Xml.XmlDocument,System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Converts a NameValueCollection to an XML structure.  It also scrubbs the data based looking for personal data (CC#, Security Codes, User names, Passwords) so
+            this information is not persisted.
+            
+            Use this function to process all additional data (such as forms, query strings, cookies)
+            </summary>
+            <param name="doc"></param>
+            <param name="rootName"></param>
+            <param name="nvc"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DAL.Business.Logger.ExceptionLogObject">
+            <summary>
+            Handles converting an Exception to XML for storing in the log database
+            </summary>
+        </member>
+        <member name="T:DAL.Business.Logger.WebLogObject">
+            <summary>
+            Retrieves interesting data from the current web application Request object for inclusion in the log entry.
+            This includes cookies, form, query string and URL.
+            Relies on the inherited ExceptionLogObject to process any exception data.
+            </summary>
+        </member>
+        <member name="T:DAL.Business.Logger.AuthenticatedWebLogObject">
+            <summary>
+            Inherits from WebLogObject but also adds a user identity to the logged information
+            </summary>
+        </member>
+        <member name="P:DAL.Business.InternalReport.NodeID">
+            <summary>
+            Created by the system and is readonly
+            </summary>
+        </member>
+        <member name="P:DAL.Business.InternalReport.Name">
+            <summary>
+            Node's display name
+            </summary>
+        </member>
+        <member name="P:DAL.Business.InternalReport.URL">
+            <summary>
+            subpath and page of this node
+            </summary>
+        </member>
+        <member name="P:DAL.Business.InternalReport.ParentNodeID">
+            <summary>
+            Parent NodeID of this node
+            </summary>
+        </member>
+        <member name="P:DAL.Business.Page.Field_Value.EnteredValue">
+            <summary>
+            Returns the EnteredValue. If the value has been cancelled then this returns string.Empty and the
+            value is available in EnteredValueCancelled.
+            
+            Updating the EnteredValue un-cancels the EnteredValue
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Page.Field_Value.GetByFieldID(System.Int32,System.Int32)">
+            <summary>
+            Returns the entered value for the given account id and field id. If there is no field value a default object is returned.
+            </summary>
+            <param name="field_id"></param>
+            <param name="account_id"></param>
+            <returns></returns>
+            <exception>Exceptions are not handled by this method</exception>
+        </member>
+        <member name="M:DAL.Business.Orders.Order.SetTaxes(DAL.Business.Tax)">
+            <summary>
+            Sets the Taxes property to the taxes object. Also sets the tax related properties
+            </summary>
+            <param name="taxes"></param>
+        </member>
+        <member name="M:DAL.Business.Orders.Order.AddInventoryItem(DAL.Business.Inventory.Item,DAL.Utilities.Data.Order.OrderItemType,System.Int32,System.Decimal,System.Decimal,System.Decimal,System.Int32,System.Int32)">
+            <summary>
+            Creates an OrderItem for the order. Persists it.
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Orders.Order.UpdateOrderHeader(System.Int32)">
+            <summary>
+            Calls a stored procedure that updates the order totals by summing the order payments. This only works where shipping and tax are not applicable (e.g., Events orders)
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Orders.Order.UpdateShippingAddress(DAL.Business.Orders.Order)">
+            <summary>
+            Persists only the Ship (name/address/phone) to the DB
+            </summary>
+            <param name="order"></param>
+        </member>
+        <member name="M:DAL.Business.Orders.Order.CancelItem(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Cancel all items on the customer's order that have the ItemID. Does not delete the item. Just sets its status to cancelled.
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Orders.Order.ExchangeItem(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Does a simple item ID swap on an inventory item on the order.  The items should be identical allowing
+            a valid id swap.
+            Item's Quantity On Hand is also updated.
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Orders.Order.CreateOrder(System.Int32,DAL.Utilities.Data.Order.OrderStatus,DAL.Business.Account,DAL.Utilities.Data.Consultant.Currency,DAL.Business.Address,System.DateTime,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Decimal,System.Boolean,System.String,System.String,System.String)">
+            <summary>
+            Creates a new order that assumes the Consultant is the only customer on the order.
+            The order is persisted and an OrderID and OrderNumber is immediately available.
+            </summary>
+        </member>
+        <member name="M:DAL.Business.Orders.Order.TransferEventRegistration(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Transfer an Event registration from one Consultant to another.
+            </summary>
+        </member>
+        <member name="P:DAL.Business.Orders.OrderItem.ChargeTax">
+            <summary>
+            In-memory property helping the application track whether tax should be charged on this item.
+            </summary>
+        </member>
+        <member name="P:DAL.Business.Orders.OrderItem.Item">
+            <summary>
+            Lazy loads the Inventory.Item for this order item.
+            </summary>
+        </member>
+    </members>
+</doc>

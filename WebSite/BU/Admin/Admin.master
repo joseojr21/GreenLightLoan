@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>CCU - Green Light Loan Admin Portal</title>
+
+	<link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="../Scripts/font-awesome/font-awesome.min.css" rel="stylesheet" />
+	<link href="../Content/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" runat="server" />
+	<!-- custom overrides -->
+	<link href="../resources/ctmh-seafoam.css" rel="stylesheet" runat="server" />
+	<link id="overrideStyles" href="" rel="stylesheet" runat="server" visible="false">
+	<script src="../Scripts/jquery-1.11.3.min.js"></script>
+	<script src="../Scripts/jquery.easing.1.3.js"></script>
+	<script src="../Scripts/velocity-1.2.1.js"></script>
+	<script src="../Content/bootstrap-3.3.5/js/bootstrap.js"></script>
+	<script src="../Content/bootstrap-3.3.5/js/ie10-viewport-bug-fix.js"></script>
+	<script src="../Scripts/jquery.uitotop-1.2.js"></script>
+	<script src="../Scripts/jquery.plusanchor-1.0.7.3.ctmh.1.js"></script>
+	
+	<script>
+		$().ready(function() {
+			$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+		
+		// form-control Fix for Android stock browser
+		$(function () {
+		  var nua = navigator.userAgent
+		  var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1)
+		  if (isAndroid) {
+			$('select.form-control').removeClass('form-control').css('width', '100%')
+		  }
+		})
+	</script>
+	<asp:ContentPlaceHolder ID="cphJavaScript" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+	<form runat="server" class="form-horizontal">
+		<div>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false" aria-controls="navbar-main">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" id="ctmh" runat="server"></a>
+				</div>
+				<div id="navbar-main" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<asp:ContentPlaceHolder ID="cphTopNav" runat="server" />
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#" id="office" runat="server"><i class="fa fa-chevron-circle-left"></i> Manage Users</a></li>
+						<li><a href="ManagePages.aspx"><i class="fa fa-chevron-circle-left"></i> Manage Pages</a></li>
+						<li><a href="ImageUpload.aspx"><i class="fa fa-chevron-circle-left"></i> Manage Images</a></li>
+					</ul>
+				</div> <!-- /#navbar-main -->
+			</div> <!-- /.container -->
+		</nav>
+		
+		<div id="wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						
+						<asp:ContentPlaceHolder ID="cphContent" runat="server"></asp:ContentPlaceHolder>
+
+					</div> <!-- /.col-sm-12 -->
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->
+			<footer>
+				<p>Copyright © <asp:Literal ID="litCurrentYear" runat="server" /> CTMH Co. &nbsp;•&nbsp; <a href="http://www.closetomyheart.com/ctmh/terms/terms-of-use.aspx" title="Terms of Use">Terms of Use</a> &nbsp;•&nbsp; <a href="http://www.closetomyheart.com/Contact.aspx" title="Contact Us">Contact Us</a></p>
+			</footer>
+		</div> <!-- /#wrapper -->
+		<div id="divTestBar" runat="server" style="font-size: 14px; padding: 5px 5px 5px 15px;  background-color: rgba(0, 0, 0, 0.75); color: #FFFFFF; font-weight: bold; text-align: center;" visible="false">
+			Account: <span style="font-weight: normal;" id="txtAccountInfo" runat="server"></span>&nbsp; &nbsp; &nbsp; &nbsp; 
+			Local Date: <asp:TextBox ID="txtTestDate" runat="server" style="color: #000;" /> <asp:Button ID="btnTestDate" CssClass="btn btn-danger" runat="server" Text="Go" style="font-size: 10px; padding: 5px;" />
+		</div>
+
+	</div>
+	</form>
+</body>
+</html>

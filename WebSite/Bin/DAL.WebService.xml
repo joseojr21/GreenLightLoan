@@ -1,0 +1,1179 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DAL.WebService</name>
+    </assembly>
+    <members>
+        <member name="T:DAL.WebService.FulfillmentService_2.FulfillmentService">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.#ctor(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.FulfillmentService_2.FulfillmentService.GetOrderStatusesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.FulfillmentService_2.FulfillmentService.SwapUserAccountsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.FulfillmentService_2.FulfillmentService.GetProjectsByCtmhIDCompleted">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.FulfillmentService_2.FulfillmentService.RestoreExpiredProjectCompleted">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.FulfillmentService_2.FulfillmentService.GenerateOrderURLCompleted">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.FulfillmentService_2.FulfillmentService.GetOrderByIDCompleted">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.FulfillmentService_2.FulfillmentService.GetOrdersByStatusCompleted">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.FulfillmentService_2.FulfillmentService.SetOrderStatusCompleted">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.FulfillmentService_2.FulfillmentService.SetOrderStatusByCtmhIDCompleted">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.FulfillmentService_2.FulfillmentService.GetNextRenderedOrderCompleted">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.GetOrderStatuses">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.BeginGetOrderStatuses(System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.EndGetOrderStatuses(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.GetOrderStatusesAsync">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.GetOrderStatusesAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.SwapUserAccounts(System.String,System.String,System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.BeginSwapUserAccounts(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.EndSwapUserAccounts(System.IAsyncResult,System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.SwapUserAccountsAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.SwapUserAccountsAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.GetProjectsByCtmhID(System.String,System.String@,DAL.WebService.FulfillmentService_2.Project[]@,System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.BeginGetProjectsByCtmhID(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.EndGetProjectsByCtmhID(System.IAsyncResult,System.String@,DAL.WebService.FulfillmentService_2.Project[]@,System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.GetProjectsByCtmhIDAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.GetProjectsByCtmhIDAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.RestoreExpiredProject(System.String,System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.BeginRestoreExpiredProject(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.EndRestoreExpiredProject(System.IAsyncResult,System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.RestoreExpiredProjectAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.RestoreExpiredProjectAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.GenerateOrderURL(System.String,System.String,System.String@,System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.BeginGenerateOrderURL(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.EndGenerateOrderURL(System.IAsyncResult,System.String@,System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.GenerateOrderURLAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.GenerateOrderURLAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.GetOrderByID(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.BeginGetOrderByID(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.EndGetOrderByID(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.GetOrderByIDAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.GetOrderByIDAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.GetOrdersByStatus(System.String,System.String[])">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.BeginGetOrdersByStatus(System.String,System.String[],System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.EndGetOrdersByStatus(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.GetOrdersByStatusAsync(System.String,System.String[])">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.GetOrdersByStatusAsync(System.String,System.String[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.SetOrderStatus(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.BeginSetOrderStatus(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.EndSetOrderStatus(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.SetOrderStatusAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.SetOrderStatusAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.SetOrderStatusByCtmhID(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.BeginSetOrderStatusByCtmhID(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.EndSetOrderStatusByCtmhID(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.SetOrderStatusByCtmhIDAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.SetOrderStatusByCtmhIDAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.GetNextRenderedOrder(System.String[])">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.BeginGetNextRenderedOrder(System.String[],System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.EndGetNextRenderedOrder(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.GetNextRenderedOrderAsync(System.String[])">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.GetNextRenderedOrderAsync(System.String[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService_2.FulfillmentService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.OrderStatus">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.OrderStatus.OrderStatusID">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.OrderStatus.Name">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.PagePosition">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.PagePosition.PagePositionID">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.PagePosition.Width">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.PagePosition.Height">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.PagePosition.Unit">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.PagePosition.Position">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.Page">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.Page.PagePosition">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.Page.ImagePath">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.Spread">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.Spread.SpreadID">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.Spread.Name">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.Spread.KitName">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.Spread.LayoutName">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.Spread.ThumbnailPath">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.Spread.Pages">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.OrderItem">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.OrderItem.OrderItemID">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.OrderItem.CtmhOrderItemID">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.OrderItem.Quantity">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.OrderItem.ProjectName">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.OrderItem.Spread">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.Order">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.Order.OrderID">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.Order.CtmhID">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.Order.OrderStatus">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.Order.OrderItems">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.Order.ContentUrl">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.Order.Created">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.Order.Updated">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.Project">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.Project.ProjectID">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.Project.Name">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.Project.Status">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.Project.SpreadCount">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.Project.Created">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.Project.Updated">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.Project.ExpirationDate">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.Project.AgingNotification">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.GetOrderStatusesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.GetOrderStatusesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.GetOrderStatusesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.SwapUserAccountsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.SwapUserAccountsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.SwapUserAccountsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.SwapUserAccountsCompletedEventArgs.Message">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.GetProjectsByCtmhIDCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.GetProjectsByCtmhIDCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.GetProjectsByCtmhIDCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.GetProjectsByCtmhIDCompletedEventArgs.Message">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.GetProjectsByCtmhIDCompletedEventArgs.Project">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.GetProjectsByCtmhIDCompletedEventArgs.Count">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.RestoreExpiredProjectCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.RestoreExpiredProjectCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.RestoreExpiredProjectCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.RestoreExpiredProjectCompletedEventArgs.Message">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.GenerateOrderURLCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.GenerateOrderURLCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.GenerateOrderURLCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.GenerateOrderURLCompletedEventArgs.Message">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.GenerateOrderURLCompletedEventArgs.URL">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.GetOrderByIDCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.GetOrderByIDCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.GetOrderByIDCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.GetOrdersByStatusCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.GetOrdersByStatusCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.GetOrdersByStatusCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.SetOrderStatusCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.SetOrderStatusCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.SetOrderStatusCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.SetOrderStatusByCtmhIDCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.SetOrderStatusByCtmhIDCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.SetOrderStatusByCtmhIDCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.GetNextRenderedOrderCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService_2.GetNextRenderedOrderCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.FulfillmentService_2.GetNextRenderedOrderCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.ShippingService">
+            <summary>
+            Shim layer for retrieving shipping method data from the shipping method web service.
+            App.config or Web.config requires an app setting called "ShippingWSUrl" that provides the shipping web service URL to query.
+            </summary>
+        </member>
+        <member name="M:DAL.WebService.ShippingService.GetShippingMethods(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Decimal,System.Decimal)">
+            <summary>
+            Returns a list of valid shipping methods for the given address based on order type, order weight, etc.
+            </summary>
+        </member>
+        <member name="M:DAL.WebService.ShippingService.GetShippingMethod(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Decimal,System.Decimal)">
+            <summary>
+            Returns the valid shipping method for the given address based on order type, order weight, etc. Filtered by ShippingMethodID (if that shipping method is valid for the given parameters)
+            </summary>
+        </member>
+        <member name="M:DAL.WebService.ShippingService.GetShippingMethodsForItem(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Decimal,System.Decimal,System.Int32)">
+            <summary>
+            Returns a list of valid shipping methods for the given address based on order type, order weight, etc.
+            An ItemID is passed so if any shipping overrides exist for that item they are returned instead.
+            </summary>
+        </member>
+        <member name="M:DAL.WebService.ShippingService.GetShippingMethodForItem(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Decimal,System.Decimal,System.Int32)">
+            <summary>
+            Returns the valid shipping method for the given address based on order type, order weight, etc. Filtered by ShippingMethodID (if that shipping method is valid for the given parameters).
+            An ItemID is specified so if any shipping overrides exist for the item they are returned instead.
+            </summary>
+        </member>
+        <member name="T:DAL.WebService.TaxService">
+            <summary>
+            Shim later for retrieving tax rates from the Tax Web Service
+            </summary>
+        </member>
+        <member name="T:DAL.WebService.FulfillmentService">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.FulfillmentService.GetOrderStatusesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.FulfillmentService.GetOrderByIDCompleted">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.FulfillmentService.GetOrdersByStatusCompleted">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.FulfillmentService.SetOrderStatusCompleted">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.FulfillmentService.SetOrderStatusByCtmhIDCompleted">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.FulfillmentService.GetNextRenderedOrderCompleted">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.GetOrderStatuses">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.BeginGetOrderStatuses(System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.EndGetOrderStatuses(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.GetOrderStatusesAsync">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.GetOrderStatusesAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.GetOrderByID(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.BeginGetOrderByID(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.EndGetOrderByID(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.GetOrderByIDAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.GetOrderByIDAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.GetOrdersByStatus(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.BeginGetOrdersByStatus(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.EndGetOrdersByStatus(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.GetOrdersByStatusAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.GetOrdersByStatusAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.SetOrderStatus(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.BeginSetOrderStatus(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.EndSetOrderStatus(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.SetOrderStatusAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.SetOrderStatusAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.SetOrderStatusByCtmhID(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.BeginSetOrderStatusByCtmhID(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.EndSetOrderStatusByCtmhID(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.SetOrderStatusByCtmhIDAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.SetOrderStatusByCtmhIDAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.GetNextRenderedOrder">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.BeginGetNextRenderedOrder(System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.EndGetNextRenderedOrder(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.GetNextRenderedOrderAsync">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.GetNextRenderedOrderAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.FulfillmentService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.OrderStatus">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.OrderStatus.OrderStatusID">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.OrderStatus.Name">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.PagePosition">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.PagePosition.PagePositionID">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.PagePosition.Width">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.PagePosition.Height">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.PagePosition.Unit">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.PagePosition.Position">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.Page">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.Page.PagePosition">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.Page.ImagePath">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.Spread">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.Spread.SpreadID">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.Spread.Name">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.Spread.KitName">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.Spread.LayoutName">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.Spread.ThumbnailPath">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.Spread.Pages">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.OrderItem">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.OrderItem.OrderItemID">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.OrderItem.CtmhOrderItemID">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.OrderItem.Quantity">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.OrderItem.ProjectName">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.OrderItem.Spread">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.Order">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.Order.OrderID">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.Order.CtmhID">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.Order.OrderStatus">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.Order.OrderItems">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.Order.ContentUrl">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.Order.Created">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.Order.Updated">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.GetOrderStatusesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.GetOrderStatusesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.GetOrderStatusesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.GetOrderByIDCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.GetOrderByIDCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.GetOrderByIDCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.GetOrdersByStatusCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.GetOrdersByStatusCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.GetOrdersByStatusCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.SetOrderStatusCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.SetOrderStatusCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.SetOrderStatusCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.SetOrderStatusByCtmhIDCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.SetOrderStatusByCtmhIDCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.SetOrderStatusByCtmhIDCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.GetNextRenderedOrderCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.GetNextRenderedOrderCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.GetNextRenderedOrderCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:DAL.WebService.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:DAL.WebService.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:DAL.WebService.CampaignEmailsPre.CampaignEmails">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.CampaignEmailsPre.CampaignEmails.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.CampaignEmailsPre.CampaignEmails.AddSubscriberCompleted">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.CampaignEmailsPre.CampaignEmails.UnsubscribeCompleted">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.CampaignEmailsPre.CampaignEmails.AddSubscriber(System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.CampaignEmailsPre.CampaignEmails.AddSubscriberAsync(System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.CampaignEmailsPre.CampaignEmails.AddSubscriberAsync(System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.CampaignEmailsPre.CampaignEmails.Unsubscribe(System.String,System.Int32,System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.CampaignEmailsPre.CampaignEmails.UnsubscribeAsync(System.String,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.CampaignEmailsPre.CampaignEmails.UnsubscribeAsync(System.String,System.Int32,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.CampaignEmailsPre.CampaignEmails.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.CampaignEmailsPre.AddSubscriberCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.CampaignEmailsPre.AddSubscriberCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.CampaignEmailsPre.AddSubscriberCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.CampaignEmailsPre.AddSubscriberCompletedEventArgs.message">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.CampaignEmailsPre.UnsubscribeCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.CampaignEmailsPre.UnsubscribeCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.CampaignEmailsPre.UnsubscribeCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.CampaignEmailsPre.UnsubscribeCompletedEventArgs.message">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.CampaignEmails.CampaignEmails">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.CampaignEmails.CampaignEmails.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.CampaignEmails.CampaignEmails.AddSubscriberCompleted">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.CampaignEmails.CampaignEmails.UnsubscribeCompleted">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.CampaignEmails.CampaignEmails.AddSubscriber(System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.CampaignEmails.CampaignEmails.AddSubscriberAsync(System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.CampaignEmails.CampaignEmails.AddSubscriberAsync(System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.CampaignEmails.CampaignEmails.Unsubscribe(System.String,System.Int32,System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.CampaignEmails.CampaignEmails.UnsubscribeAsync(System.String,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.CampaignEmails.CampaignEmails.UnsubscribeAsync(System.String,System.Int32,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.CampaignEmails.CampaignEmails.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.CampaignEmails.AddSubscriberCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.CampaignEmails.AddSubscriberCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.CampaignEmails.AddSubscriberCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.CampaignEmails.AddSubscriberCompletedEventArgs.message">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.CampaignEmails.UnsubscribeCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.CampaignEmails.UnsubscribeCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.CampaignEmails.UnsubscribeCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.CampaignEmails.UnsubscribeCompletedEventArgs.message">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.ShippingServiceRef.ShippingService">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.ShippingServiceRef.ShippingService.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.ShippingServiceRef.ShippingService.GetShippingMethodsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.ShippingServiceRef.ShippingService.GetShippingMethodsForItemCompleted">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.ShippingServiceRef.ShippingService.GetShippingMethodCompleted">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.ShippingServiceRef.ShippingService.GetShippingMethodForItemCompleted">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.ShippingServiceRef.ShippingService.GetShippingMethods(DAL.WebService.ShippingServiceRef.Address,System.Int32,System.Decimal,System.Decimal)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.ShippingServiceRef.ShippingService.GetShippingMethodsAsync(DAL.WebService.ShippingServiceRef.Address,System.Int32,System.Decimal,System.Decimal)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.ShippingServiceRef.ShippingService.GetShippingMethodsAsync(DAL.WebService.ShippingServiceRef.Address,System.Int32,System.Decimal,System.Decimal,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.ShippingServiceRef.ShippingService.GetShippingMethodsForItem(DAL.WebService.ShippingServiceRef.Address,System.Int32,System.Decimal,System.Decimal,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.ShippingServiceRef.ShippingService.GetShippingMethodsForItemAsync(DAL.WebService.ShippingServiceRef.Address,System.Int32,System.Decimal,System.Decimal,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.ShippingServiceRef.ShippingService.GetShippingMethodsForItemAsync(DAL.WebService.ShippingServiceRef.Address,System.Int32,System.Decimal,System.Decimal,System.Int32,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.ShippingServiceRef.ShippingService.GetShippingMethod(System.Int32,DAL.WebService.ShippingServiceRef.Address,System.Int32,System.Decimal,System.Decimal)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.ShippingServiceRef.ShippingService.GetShippingMethodAsync(System.Int32,DAL.WebService.ShippingServiceRef.Address,System.Int32,System.Decimal,System.Decimal)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.ShippingServiceRef.ShippingService.GetShippingMethodAsync(System.Int32,DAL.WebService.ShippingServiceRef.Address,System.Int32,System.Decimal,System.Decimal,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.ShippingServiceRef.ShippingService.GetShippingMethodForItem(System.Int32,DAL.WebService.ShippingServiceRef.Address,System.Int32,System.Decimal,System.Decimal,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.ShippingServiceRef.ShippingService.GetShippingMethodForItemAsync(System.Int32,DAL.WebService.ShippingServiceRef.Address,System.Int32,System.Decimal,System.Decimal,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.ShippingServiceRef.ShippingService.GetShippingMethodForItemAsync(System.Int32,DAL.WebService.ShippingServiceRef.Address,System.Int32,System.Decimal,System.Decimal,System.Int32,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.ShippingServiceRef.ShippingService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.ShippingServiceRef.Address">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.Address.CountryID">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.Address.Line1">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.Address.Line2">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.Address.Line3">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.Address.City">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.Address.County">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.Address.State">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.Address.PostalCode">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.ShippingServiceRef.ShippingMethod">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.ShippingMethod.ShippingMethodID">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.ShippingMethod.ShortName">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.ShippingMethod.Description">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.ShippingMethod.ShipperCode">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.ShippingMethod.Minimum">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.ShippingMethod.Rate">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.ShippingMethod.MinWeight">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.ShippingMethod.MaxWeight">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.ShippingMethod.MinSubtotal">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.ShippingMethod.MaxSubtotal">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.ShippingMethod.Subtotal">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.ShippingMethod.Weight">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.ShippingMethod.CarrierID">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.ShippingMethod.CanShipToPOBox">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.ShippingMethod.AllowsCreditRedemptionWaiver">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.ShippingServiceRef.GetShippingMethodsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.ShippingServiceRef.GetShippingMethodsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.GetShippingMethodsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.ShippingServiceRef.GetShippingMethodsForItemCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.ShippingServiceRef.GetShippingMethodsForItemCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.GetShippingMethodsForItemCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.ShippingServiceRef.GetShippingMethodCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.ShippingServiceRef.GetShippingMethodCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.GetShippingMethodCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.ShippingServiceRef.GetShippingMethodForItemCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.ShippingServiceRef.GetShippingMethodForItemCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.ShippingServiceRef.GetShippingMethodForItemCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.TaxServiceRef.TaxService">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.TaxServiceRef.TaxService.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:DAL.WebService.TaxServiceRef.TaxService.GetTaxRatesCompleted">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.TaxServiceRef.TaxService.GetTaxRates(DAL.WebService.TaxServiceRef.Address,System.Decimal,System.Decimal)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.TaxServiceRef.TaxService.GetTaxRatesAsync(DAL.WebService.TaxServiceRef.Address,System.Decimal,System.Decimal)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.TaxServiceRef.TaxService.GetTaxRatesAsync(DAL.WebService.TaxServiceRef.Address,System.Decimal,System.Decimal,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DAL.WebService.TaxServiceRef.TaxService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.TaxServiceRef.Address">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.Address.CountryID">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.Address.Line1">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.Address.Line2">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.Address.Line3">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.Address.City">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.Address.County">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.Address.State">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.Address.PostalCode">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.TaxServiceRef.TaxRates">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.JurisdictionCode">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.JurisdictionCountry">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.JurisdictionState">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.JurisdictionCounty">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.JurisdictionCity">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.JurisdictionSpecial">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.TaxableSubTotal">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.ShippingSubTotal">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.TaxableAmount">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.ChargeTaxOnShipping">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.Accuracy">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.ChargeStateTaxOnCountryTax">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.CityTaxRate">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.CountyTaxRate">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.StateTaxRate">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.CountryTaxRate">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.SpecialTaxRate">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.TaxRate">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.SpecialTaxAmount">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.CityTaxAmount">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.CountyTaxAmount">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.StateTaxAmount">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.CountryTaxAmount">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.TaxRates.TaxAmount">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.TaxServiceRef.AccuracyType">
+            <remarks/>
+        </member>
+        <member name="F:DAL.WebService.TaxServiceRef.AccuracyType.Unknown">
+            <remarks/>
+        </member>
+        <member name="F:DAL.WebService.TaxServiceRef.AccuracyType.PostalCode">
+            <remarks/>
+        </member>
+        <member name="F:DAL.WebService.TaxServiceRef.AccuracyType.StreetAddress">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.TaxServiceRef.GetTaxRatesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DAL.WebService.TaxServiceRef.GetTaxRatesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DAL.WebService.TaxServiceRef.GetTaxRatesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+    </members>
+</doc>

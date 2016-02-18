@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DAL.SQL</name>
+    </assembly>
+    <members>
+        <member name="M:DAL.SQL.AccountTitlesDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.AccountTitlesDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.AddressDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.AddressDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.BoxDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.BoxDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.CatalogsDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.CatalogsDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.ContactInformationDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.ContactInformationDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.ContactInformationTypeDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.ContactInformationTypeDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.AccountLedgerDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.AccountLedgerDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.CommissionsInfoDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.CommissionsInfoDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.BillingProfileDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.BillingProfileDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.CommissionPeriodDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.CommissionPeriodDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.CTMHTaxDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.CTMHTaxDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.ShippingMethodDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.ShippingMethodDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.TaxCacheDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.TaxCacheDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.TaxCacheDS.ByTaxCacheID(System.Int32)">
+            <summary>
+            Gets a US Tax Cache entry by TaxCacheID
+            </summary>
+            <param name="taxCacheID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.SQL.MembershipBenefitDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.MembershipBenefitDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.MembershipDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.MembershipDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.MyCTMHSiteDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.MyCTMHSiteDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.MyCTMHSiteDS.SaveVanityName(System.String,System.Int32,System.Action{System.Exception})">
+            <summary>
+            Update vanity name
+            </summary>
+            <param name="vanityName"></param>
+            <param name="accountID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.SQL.PhoneNoteDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.PhoneNoteDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.PhoneNoteDS.spPhoneNoteCreate(System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Immediately writes a note to the database associated to a Consultant's Phone Note log
+            </summary>
+            <param name="accountid">The Consultant Number/Account ID to add the note to</param>
+            <param name="enteredBy">The user who entered the note.  Usually a Domain/User</param>
+            <param name="summary">Short summary describing the note</param>
+            <param name="note">Full text of the note</param>
+        </member>
+        <member name="M:DAL.SQL.ProfileApplicationTypeDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.ProfileApplicationTypeDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.OnlineReportsDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.OnlineReportsDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.KeyStatsDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.KeyStatsDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.ShippingDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.ShippingDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.StateDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.StateDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.IncentiveTripDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.IncentiveTripDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.LoggerDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.LoggerDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.HighJumpDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.HighJumpDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.ProfileDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.ProfileDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.ShippingMyCTMHDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.ShippingMyCTMHDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.OutboundOrderRecordDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.OutboundOrderRecordDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="T:DAL.SQL.DataServiceBase">
+            <summary>
+              Defines common DataService routines for transaction management, 
+              stored procedure execution, parameter creation, and null value checking
+            </summary>	
+        </member>
+        <member name="M:DAL.SQL.EnteredValueDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.EnteredValueDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.FieldDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.FieldDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.FieldTypeDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.FieldTypeDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.ItemMasterRecordDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.ItemMasterRecordDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.OrderPaymentDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.OrderPaymentDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.PageDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.PageDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.PageGroupDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.PageGroupDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.SectionDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.SectionDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.SecurityDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.SecurityDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.StudioJPrinterDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.StudioJPrinterDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.StudioJShippingMethodsDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.StudioJShippingMethodsDS.#ctor(System.Data.IDbTransaction)" -->
+        <member name="M:DAL.SQL.ValidationDS.#ctor">
+            <summary>
+            Creates a new DataService
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DAL.SQL.ValidationDS.#ctor(System.Data.IDbTransaction)" -->
+    </members>
+</doc>
